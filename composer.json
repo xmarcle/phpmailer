@@ -1,0 +1,32 @@
+{
+  "name": "xmarcle/mail",
+  "description": "Based on the mail service encapsulated by phpmailer",
+  "authors": [
+    {
+      "name": "xmarcle",
+      "email": "xmarcle@qq.com"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "php": ">7.1",
+    "ext-imap": "*",
+    "phpmailer/phpmailer": "^6.3.0"
+  },
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "autoload": {
+    "files": [
+      "src/Overwrite/autoload.php"
+    ],
+    "psr-4": {
+      "Xmarcle\\Mail\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  ]
+}
